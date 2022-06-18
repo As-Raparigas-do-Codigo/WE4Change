@@ -1,5 +1,21 @@
 # WE4Change
 
+## Informação Básica
+
+- Workshop de 2h para meninas entre os 15 e os 20 anos, sem experiência de programação.
+
+Este workshop tem de estar alinhado com os objectivos do evento:
+- Consciencializar para as **alterações climáticas**, e promover uma **cidadania** ativa e o envolvimento nas comunidades;
+- Empoderar e promover uma mentalidade empreendedora para trazer uma transformação sustentável na comunidade;
+- Desenvolver o conhecimento e competências digitais como potenciadoras de inovação.
+
+## Ideias
+
+- Fazer um site base, só `HTML`, sem estilo, sem `JS` e elas têm de fazer o estilo
+- Talvez um site que já tenha lá umas notícias e elas têm de seleccionar uma notícia real na internet e adicioná-la ao site em `HTML`
+- Cada equipa dedica-se apenas a uma notícia/página e no final agregamos tudo num página onde mostramos o resultado
+- Mostrar projectos relacionados com os projectos
+
 ## Recursos
 
 - [We4Change Changemakers Event Curriculum – WE4Change](http://we4change.eu/we4change-changemakers-event-curriculum/)
