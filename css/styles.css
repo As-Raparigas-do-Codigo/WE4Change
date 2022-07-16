@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
 
+/***** GENERAL *****/
+
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -12,6 +14,13 @@ body {
   font-size: 1.2rem;
   color: white;
   min-height: 100vh;
+  background-image: linear-gradient(rgba(47, 48, 58, 1), rgba(47, 48, 58, 0.5)), url("../images/background1.png");
+  background-blend-mode: overlay; 
+}
+
+
+footer {
+  padding: 50px 0;
 }
 
 .full-height-grow {
@@ -31,37 +40,66 @@ body {
   margin-left: 1rem;
 }
 
-.main-nav ul, .footer-nav ul {
+
+.icon-section {
+  display: flex;
+}
+
+.icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: .5rem;
+  padding: .75rem;
+  width: 100px;
+  height: 100px;
+  background-color: #202027;
+  margin-bottom: 2rem;
+}
+
+.icon img {
+  width: 40px;
+}
+
+
+/** SECTIONS **/
+
+header, footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header {
+  height: 140px;
+  border-bottom: 1px solid #535566;
+}
+
+footer {
+  height: 70px;
+  font-weight: bold;
+  border-top: 1px solid #535566;
+}
+
+nav ul, .footer-nav ul {
   display: flex;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.main-nav a, .footer-nav a {
+nav a, .footer-nav a {
   color: inherit;
   text-decoration: none;
   padding: 1rem;
 }
 
-.main-nav a:hover, .footer-nav a:hover  {
+nav a:hover, .footer-nav a:hover  {
   color: #adadad;
 }
-
-.main-header, .main-footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.main-header {
-  height: 140px;
-}
-
-.main-footer {
-  height: 70px;
-  background-color: #202027;
-  font-weight: bold;
+.footer-nav {
+  margin: 0 auto;
 }
 
 .social-link img {
@@ -69,7 +107,7 @@ body {
   margin-right: .25rem;
 }
 
-.main-footer .container {
+footer .container {
   display: flex;
   justify-content: space-between;
 }
@@ -80,6 +118,8 @@ body {
   padding: 0 40px;
   flex-grow: 1;
 }
+
+/** TYPOGRAPHY **/
 
 .title {
   font-weight: 500;
@@ -93,6 +133,8 @@ body {
   font-size: 1.2em;
   margin-bottom: 2rem;
 }
+
+/** BUTTONS **/
 
 .btn {
   color: white;
@@ -112,4 +154,75 @@ body {
 
 .btn:focus {
   background-color: #2796ff;
+}
+
+/***** PAGES *****/
+
+/** HOME **/
+
+.main-section {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  flex-grow: 1;
+  padding: 50px 0;
+}
+
+.main-section .img-wrapper {
+  flex-grow: 1;
+  flex-direction: column;
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-end;
+}
+
+.wrapper .center-image {
+  width: 60%;
+  margin: 0 auto;
+  padding: 65px;
+}
+
+.wrapper img {
+  width: 100%;
+  border-radius: 8%;
+}
+
+
+.left-wrapper {
+  width: 60%;
+}
+
+.left-wrapper img {
+    width: inherit;
+    height: auto;
+    display: flex;
+    margin: 0 auto;
+}
+
+.right-wrapper {
+  width: 40%;
+}
+
+.right-wrapper > div {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.discover-main-section {
+  margin: 50px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.discover-main-section .covers-image {
+  width: 30vw;
+  margin-left: 2rem;
+  height: auto;
+  max-width: 350px;
 }
